@@ -1,19 +1,19 @@
 PipelineSecrets: {}
-elasticsearch-operator:
-  rbac:
-    enabled: true
-elasticsearch:
-  kibana:
-    enabled: true
-  cerebro:
-    enabled: true
-  use-ssl: false
 cleanup:
   Annotations:
     helm.sh/hook: pre-delete
     helm.sh/hook-delete-policy: hook-succeeded
   Args:
   - --cleanup
+elasticsearch:
+  cerebro:
+    enabled: true
+  kibana:
+    enabled: true
+  use-ssl: false
+elasticsearch-operator:
+  rbac:
+    enabled: true
 expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
