@@ -12,6 +12,8 @@ elasticsearch:
     enabled: true
   use-ssl: false
 elasticsearch-operator:
+  image:
+    tag: 0.4.0
   rbac:
     enabled: true
 expose:
