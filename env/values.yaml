@@ -6,6 +6,8 @@ cleanup:
   Args:
   - --cleanup
 elasticsearch:
+  image:
+    tag: 6.1.3_1
   cerebro:
     enabled: true
   kibana:
