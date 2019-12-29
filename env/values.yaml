@@ -6,10 +6,10 @@ cleanup:
   Args:
   - --cleanup
 elasticsearch:
-  image:
-    tag: 6.1.3_1
   cerebro:
     enabled: true
+  image:
+    tag: 6.1.3_1
   kibana:
     enabled: true
   use-ssl: false
@@ -26,7 +26,7 @@ expose:
   - --v
   - 4
   config:
-    domain: 35.154.64.41.nip.io
+    domain: 13.126.42.239.nip.io
     exposer: Ingress
     http: "true"
     tlsacme: "false"
